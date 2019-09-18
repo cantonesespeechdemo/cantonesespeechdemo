@@ -1,0 +1,138 @@
+  
+  html {
+    box-sizing: border-box;
+    font-family: "Georgia";
+    color: rgb(0, 0, 0);
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #e0e0e0;
+  }
+  
+
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 1rem;
+    margin: 0.1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Georgia";
+    }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Georgia";
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  body {
+    display:grid;
+    height: 100vh;
+    align-content: center;
+  }
+  .wrapper {
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    width: 100vw;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 15fr 1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+     ". header ."
+     ". nav ."
+     ;
+  }
+
+  .line {
+    height: 0.2rem;
+    background:rgba(25, 37, 51, 0.219);
+    background: linear-gradient(to right,rgba(188, 195, 207, 0.945) 10% ,rgba(25, 37, 51, 0.219) ,rgba(188, 195, 207, 0.945) 90%)
+  }
+
+  header {
+    grid-area: header;
+    font-size: 3rem;
+  }
+  
+  nav {
+    grid-area: nav;
+    display:grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+    grid-template-columns: 1fr minmax(auto,20rem) 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
+  
+  nav div {
+    border: 0.1rem solid rgba(161, 156, 156, 0.123);
+    box-shadow: 0.1rem 0.2rem rgba(8, 3, 3, 0.020);
+    background: rgba(9, 14, 19, 0.685);
+    width:100%;
+    grid-column: 2;
+    }
+
+  nav a {
+    
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+
+  @media screen and (min-width:950px) {
+    h1, h2, h3, h4, h5, h6, p {
+      font-size: 1.3rem;
+      margin: 0.4rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 4rem;
+      text-align: center;
+    }
+  
+    h3 {
+      font-size: 3rem;
+    }
+  
+
+  
+    nav a {
+      padding: 1rem;
+      font-size: 1.6rem;
+      font-weight: 900;
+    }
+  }

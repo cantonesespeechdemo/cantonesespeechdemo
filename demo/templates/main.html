@@ -1,0 +1,66 @@
+<!-- This is the main html that contains the video and main content -->
+<div class="main">
+    <div class="display_vid">
+        <video class="vid subject" controls webkit-playsinline="true" playsinline="true"></video>
+    </div>
+    <div class="display_transcript">
+        <h4>Transcript</h4>
+        <p></p>
+    </div>
+    <div class="display_box">
+        <div class="box cu">
+            <h4>CUHK System</h4>
+            <p></p>
+        </div>
+        <div class="box google">
+            <h4>Google API</h4>
+            <p></p>
+        </div>
+        <div class="box human">
+            <h4>Human</h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="display_text">
+        <div class="left">
+            <div class="left_transcript">
+                <div class="remarks">
+                    <span>[?]</span>
+                    <p class="hide">There are 255 words in total. Click on an underlined word to go to the
+                        corresponding time in the video.</p>
+                </div>
+                <h5>Original transcript</h5>
+                <div class="accuracy transcript"></div>
+            </div>
+
+            <div class="left_cu">
+                <h5>CUHK System</h5>
+                <div class="accuracy cu"></div>
+            </div>
+
+            <div class="left_google">
+                <div class="remarks">
+                    <span>[?]</span>
+                    <p class="hide">The speech recognition results were obtained here:
+                        https://cloud.google.com/speech-to-text/</p>
+                </div>
+                <h5>Google API</h5>
+                <div class="accuracy google"></div>
+            </div>
+
+            <div class="left_human">
+                <div class="remarks">
+                    <span>[?]</span>
+                    <p class="hide">Human recognitions were carried out by some other people who had not seen the word
+                        list in advance. They were encouraged to recognize as many words as possible to the best of
+                        their abilites.</p>
+                </div>
+                <h5>Human</h5>
+                <div class="accuracy human"></div>
+            </div>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+
+</div>
